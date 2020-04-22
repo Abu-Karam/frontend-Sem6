@@ -40,7 +40,7 @@
                         [style.width.px]='imageWidth'
                         [style.margin.px]='imageMargin'/>
                     </td>
-                    <td>{{meal.mealName}}</td>
+                    <td><a [routerLink]= "['/menu', meal.mealId]" >{{meal.mealName}}</a></td>
                     <td>{{meal.description}}</td>
                     <td>{{meal.price | currency:'Dkk  ':true}}</td>
                     <td><pm-rate [rating]= 'meal.stars'></pm-rate></td>
