@@ -7,7 +7,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
-import { GallaryComponent } from './gallary/gallary.component';
+
 import { FindUsComponent } from './find-us/find-us.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -23,6 +23,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { RateComponent } from './shared/rate.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MealDetailComponent } from './menu/meal-detail.component';
+import { OrderComponent } from './order/order.component';
 
 //import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -33,10 +34,11 @@ import { MealDetailComponent } from './menu/meal-detail.component';
     FooterComponent,
     HeaderComponent,
     MenuComponent,
-    GallaryComponent,
+    
     FindUsComponent,
     RateComponent,
-    MealDetailComponent
+    MealDetailComponent,
+    OrderComponent
     
   ],
   imports: [
