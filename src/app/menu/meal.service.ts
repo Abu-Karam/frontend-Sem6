@@ -8,7 +8,7 @@ import { tap, catchError } from 'rxjs/operators';
     providedIn: 'root'
 })
 export class MealService {
-  //private dataUrl = 'json_data/meals.json';
+  //private dataUrl = 'json_data/meals.json';uo 
   private dataUrl = 'http://localhost:3000/meals/';
   constructor(private http:HttpClient) {
     
