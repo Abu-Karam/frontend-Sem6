@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>project7 documentation</title>
+        <title>go-eat documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">project7 documentation</a>
+            <a href="../" class="navbar-brand">go-eat documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -237,7 +237,78 @@ export class FindUsComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;p&gt;find-us works!&lt;/p&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;app-header&gt;&lt;/app-header&gt;
+ 
+
+
+
+&lt;div class&#x3D;&quot;grid&quot;&gt;
+  &lt;img
+  src&#x3D;&quot;../assets/Images/contacttruck.png&quot;
+  class&#x3D;&quot;contactimg&quot;
+  alt&#x3D;&quot;...&quot;
+/&gt;
+
+&lt;div class&#x3D;&quot;container&quot;&gt;
+  
+  &lt;h1 class&#x3D;&quot;title&quot;&gt;Contact Us&lt;/h1&gt;
+ 
+&lt;mat-form-field class&#x3D;&quot;example-full-width&quot; &gt;
+    &lt;mat-label class&#x3D;&quot;insideinput&quot;&gt;Your name&lt;/mat-label&gt;
+    &lt;input ngModel
+    #yourname&#x3D;&quot;ngModel&quot;
+    name&#x3D;&quot;yourname&quot;
+    type&#x3D;&quot;text&quot; matInput placeholder&#x3D;&quot;Your name&quot; required&gt;
+    &lt;mat-error *ngIf&#x3D;&quot;yourname.invalid &amp;&amp; yourname.errors.required&quot;&gt;Your name field is required.&lt;/mat-error&gt;
+  &lt;/mat-form-field&gt;
+ 
+  &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+    &lt;mat-label class&#x3D;&quot;insideinput&quot;&gt;Your lastname&lt;/mat-label&gt;
+    &lt;input ngModel
+    #yourlastname&#x3D;&quot;ngModel&quot;
+    name&#x3D;&quot;yourlastname&quot;
+    type&#x3D;&quot;text&quot; matInput placeholder&#x3D;&quot;Your lastname&quot; required&gt;
+    &lt;mat-error *ngIf&#x3D;&quot;yourlastname.invalid &amp;&amp; yourlastname.errors.required&quot;&gt;Your lastname field is required.&lt;/mat-error&gt;
+  &lt;/mat-form-field&gt;
+ 
+  &lt;br&gt;
+ 
+  &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+    &lt;mat-label class&#x3D;&quot;insideinput&quot;&gt;Your email&lt;/mat-label&gt;
+    &lt;input ngModel
+    #youremail&#x3D;&quot;ngModel&quot;
+    name&#x3D;&quot;youremail&quot;
+    type&#x3D;&quot;email&quot; matInput placeholder&#x3D;&quot;Your email&quot; required&gt;
+    &lt;mat-error *ngIf&#x3D;&quot;youremail.invalid &amp;&amp; youremail.errors.required&quot;&gt;Your email field is required.&lt;/mat-error&gt;
+  &lt;/mat-form-field&gt;
+ 
+  
+  &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+    &lt;mat-label class&#x3D;&quot;insideinput&quot;&gt;Telephone&lt;/mat-label&gt;
+    &lt;span matPrefix&gt;+45 &amp;nbsp;&lt;/span&gt;
+    &lt;input type&#x3D;&quot;tel&quot; matInput placeholder&#x3D;&quot;555-555-1234&quot;&gt;
+  &lt;/mat-form-field&gt;
+ 
+  &lt;br&gt;
+ 
+  &lt;mat-form-field &gt;
+    &lt;mat-label class&#x3D;&quot;insideinput&quot;&gt;Your message&lt;/mat-label&gt;
+    &lt;input ngModel
+    #yourmessage&#x3D;&quot;ngModel&quot; name&#x3D;&quot;yourmessage&quot; 
+    type&#x3D;&quot;text&quot; matInput placeholder&#x3D;&quot;Your message&quot; required&gt;&lt;textarea matInput cdkTextareaAutosize
+    cdkAutosizeMinRows&#x3D;&quot;3&quot;
+    cdkAutosizeMaxRows&#x3D;&quot;5&quot;&gt;&lt;/textarea&gt;
+    &lt;mat-error *ngIf&#x3D;&quot;yourmessage.invalid &amp;&amp; yourmessage.errors.required&quot;&gt;Your message field is required.&lt;/mat-error&gt;
+  &lt;/mat-form-field&gt;
+&lt;br&gt;
+  &lt;a mat-button class&#x3D;&quot;buttonsend&quot;&gt;Send&lt;/a&gt;
+ 
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer&gt;
+  &lt;app-footer&gt;&lt;/app-footer&gt;
+&lt;/footer&gt;
 </code></pre>
     </div>
 
@@ -245,7 +316,104 @@ export class FindUsComponent implements OnInit {
                 <p class="comment">
                     <code>./find-us.component.css</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <pre class="line-numbers"><code class="language-scss">
+.container { 
+
+ border: 2px #e27a3d solid;
+  border-radius: 35px;
+  box-shadow: 0010pxrgba(0,0,0,0.3);
+  width: 36%;
+  background-color: white;
+  text-align: center;
+  position :relative; 
+  padding-top:20px;
+  padding-bottom:20px;
+  margin-top: 6%;
+  height: 40%;
+  margin-right: 5.3%;
+  
+  }
+
+  .title {
+        background-color: #e27a3d;
+        width: 106%;
+        color: white;
+        letter-spacing: 2px;
+        border-radius: 35px 35px 0px 0px;
+        margin-left: -3%;
+      padding-bottom: 10px;  
+      padding-top: 10px;
+      margin-top: -4%;  }
+
+
+
+  .grid {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+}
+   
+  .buttonsend {
+  font-size: 20px;
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #e27a3d;
+  color: white;
+  letter-spacing: 3px;
+  text-decoration: none;
+  
+  }
+
+  .contactimg  { 
+        position: relative;
+        width: 37%;
+        margin-left: 8%;
+    ;
+  }
+   
+  .example-full-width {
+  padding:10px;
+  }
+   
+  .inputtextarea {
+  width: 200px;
+  }
+   
+  .mat-error{
+  color: red; 
+  }
+  .matInput{
+  caret-color: #e27a3d; }
+   
+  .mat-input-element {
+  caret-color: #e27a3d; }
+   
+      ::ng-deep.mat-focused.mat-form-field-label {
+  /*change color of label*/
+  color: #e27a3d!important;
+         }
+  
+         ::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: #e27a3d!important;
+        } 
+  
+        ::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: #e27a3d!important;;
+        }
+   
+  ::placeholder{
+  color: #e27a3d;
+        }
+   
+  .insideinput {
+  color: #e27a3d;
+        }
+  
+  </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -273,8 +441,8 @@ export class FindUsComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><p>find-us works!</p></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FindUsComponent', 'selector': 'app-find-us'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'GallaryComponent', 'selector': 'app-gallary'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'MenuComponent', 'selector': 'app-menu'}];
+        var COMPONENT_TEMPLATE = '<div><app-header></app-header> <div class="grid">  <img  src="../assets/Images/contacttruck.png"  class="contactimg"  alt="..."/><div class="container">    <h1 class="title">Contact Us</h1> <mat-form-field class="example-full-width" >    <mat-label class="insideinput">Your name</mat-label>    <input ngModel    #yourname="ngModel"    name="yourname"    type="text" matInput placeholder="Your name" required>    <mat-error *ngIf="yourname.invalid && yourname.errors.required">Your name field is required.</mat-error>  </mat-form-field>   <mat-form-field class="example-full-width">    <mat-label class="insideinput">Your lastname</mat-label>    <input ngModel    #yourlastname="ngModel"    name="yourlastname"    type="text" matInput placeholder="Your lastname" required>    <mat-error *ngIf="yourlastname.invalid && yourlastname.errors.required">Your lastname field is required.</mat-error>  </mat-form-field>   <br>   <mat-form-field class="example-full-width">    <mat-label class="insideinput">Your email</mat-label>    <input ngModel    #youremail="ngModel"    name="youremail"    type="email" matInput placeholder="Your email" required>    <mat-error *ngIf="youremail.invalid && youremail.errors.required">Your email field is required.</mat-error>  </mat-form-field>     <mat-form-field class="example-full-width">    <mat-label class="insideinput">Telephone</mat-label>    <span matPrefix>+45 &nbsp;</span>    <input type="tel" matInput placeholder="555-555-1234">  </mat-form-field>   <br>   <mat-form-field >    <mat-label class="insideinput">Your message</mat-label>    <input ngModel    #yourmessage="ngModel" name="yourmessage"     type="text" matInput placeholder="Your message" required><textarea matInput cdkTextareaAutosize    cdkAutosizeMinRows="3"    cdkAutosizeMaxRows="5"></textarea>    <mat-error *ngIf="yourmessage.invalid && yourmessage.errors.required">Your message field is required.</mat-error>  </mat-form-field><br>  <a mat-button class="buttonsend">Send</a> </div></div><footer>  <app-footer></app-footer></footer></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FindUsComponent', 'selector': 'app-find-us'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'MealDetailComponent', 'selector': ''},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'OrderComponent', 'selector': 'app-order'},{'name': 'RateComponent', 'selector': 'pm-rate'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'FindUsComponent'};
 </script>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>project7 documentation</title>
+        <title>go-eat documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">project7 documentation</a>
+            <a href="../" class="navbar-brand">go-eat documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -74,14 +74,19 @@
 import { Routes, RouterModule } from &#x27;@angular/router&#x27;;
 import { LandingPageComponent } from &#x27;./landing-page/landing-page.component&#x27;;
 import { MenuComponent} from &#x27;./menu/menu.component&#x27;;
-import { GallaryComponent } from &#x27;./gallary/gallary.component&#x27;;
+
 import { FindUsComponent } from &#x27;./find-us/find-us.component&#x27;;
+import { MealDetailComponent } from &#x27;./menu/meal-detail.component&#x27;;
+import { OrderComponent } from &#x27;./order/order.component&#x27;;
 
 const routes: Routes &#x3D; [
-  { path: &#x27;&#x27;, component: LandingPageComponent },
+  { path: &#x27;home&#x27;, component: LandingPageComponent },
   { path: &#x27;menu&#x27;, component: MenuComponent },
-  { path: &#x27;gallary&#x27;, component: GallaryComponent},
-  { path: &#x27;find-us&#x27;, component: FindUsComponent}
+  { path: &#x27;menu/:id&#x27;, component: MealDetailComponent},
+  { path: &#x27;Order&#x27;, component: OrderComponent},
+  { path: &#x27;find-us&#x27;, component: FindUsComponent},
+  { path: &#x27;&#x27;, redirectTo: &#x27;home&#x27;, pathMatch: &#x27;full&#x27;},
+  //{ path: &#x27;**&#x27;, component: PageNotFoundComponent}
 
 ];
 
