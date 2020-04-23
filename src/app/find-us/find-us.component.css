@@ -1,7 +1,7 @@
 
 .container { 
 
- border: 2px #e27a3d solid;
+ border: 2px #87e23d solid;
   border-radius: 35px;
   box-shadow: 0010pxrgba(0,0,0,0.3);
   width: 36%;
@@ -17,7 +17,7 @@
   }
 
   .title {
-        background-color: #e27a3d;
+        background-color: #287396;
         width: 106%;
         color: white;
         letter-spacing: 2px;
@@ -41,7 +41,7 @@
   width: 60%;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #e27a3d;
+  background-color: #6e366a;
   color: white;
   letter-spacing: 3px;
   text-decoration: none;
